@@ -28,15 +28,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="8dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
                 android:text="@string/label_note_title"
                 android:textColor="@color/black"
-                android:textSize="18sp"></TextView>
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
         </RelativeLayout>
 
         <TextView
             android:id="@+id/tv_note"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLines="10"
+            android:padding="10dp"
+            android:textStyle="normal"
             android:text="@string/label_notes_content"
             android:textColor="@color/black"
             android:textSize="14sp"></TextView>
@@ -46,7 +55,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/label_note_date"
-            android:textColor="@color/black"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/grey"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:textStyle="normal"
+            android:maxLines="10"
             android:textSize="14sp"></TextView>
     </LinearLayout>
 
