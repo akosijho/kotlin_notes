@@ -5,4 +5,7 @@
     <string name="label_note_date">Date</string>
     <string name="label_add_note_title">Name</string>
     <string name="label_start_typing">Start Typing</string>
+    <string name="label_delete_note">Delete</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="label_search_notes">Search Notes</string>
 </resources>
