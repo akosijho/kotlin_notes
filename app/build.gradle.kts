@@ -9,7 +9,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.jhobert.notes"
+        applicationId = "com.jhobert.notes.dev"
         minSdk = 26
         targetSdk = 31
         versionCode = 1
