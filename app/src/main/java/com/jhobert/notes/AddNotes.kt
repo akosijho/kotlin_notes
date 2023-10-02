@@ -15,7 +15,7 @@ class AddNotes : AppCompatActivity() {
     private lateinit var binding: ActivityAddNotesBinding
     private lateinit var note: Note
     private lateinit var oldNote: Note
-    var isUpdate = false
+    private var isUpdate = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +51,9 @@ class AddNotes : AppCompatActivity() {
                 Toast.makeText(this@AddNotes, "Please enter some text", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+        }
+        binding.ivBack.setOnClickListener{
+            finish()
         }
     }
 }
